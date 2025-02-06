@@ -7,7 +7,7 @@ import Analytics from './pages/Analytics';
 import background from './assets/background.png'; // Import background image
 import Garden from './pages/Garden';
 import Disease from './pages/Disease';
-import Community from './pages/Community';
+import Community from './pages/Community';;
 
 const App = () => {
   return (
