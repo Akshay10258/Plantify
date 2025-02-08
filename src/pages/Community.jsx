@@ -1,4 +1,6 @@
 import React, { useState,useEffect } from "react";
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const Community = () => {
   // Sample data for posts (including other users' posts)
@@ -255,6 +257,8 @@ const Community = () => {
   }, []); // Empty dependency array ensures this runs only once on mount
 
   return (
+    <>
+    <Navbar/>
     <div className="min-h-screen bg-black/55 backdrop-blur-md text-white p-8 max-w-screen-2xl mx-auto font-mono text-sm mt-6">
       <h1 className="text-3xl md:text-5xl font-bold mb-6 text-green-500 text-center font-smooch">
         Community Feed
@@ -395,6 +399,8 @@ const Community = () => {
         </div>
       </div>
     </div>
+        <Footer/>
+        </>
   );
 };
 

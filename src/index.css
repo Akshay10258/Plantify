@@ -26,3 +26,55 @@
     scrollbar-width: thin; /* Make the scrollbar thin */
     scrollbar-color: #4a5568 transparent; /* Thumb color and track color */
   }
+
+  .gradient-text-animation2 {
+    background: linear-gradient(
+        90deg,
+        #ff6b6b, 
+        #ffb56b, 
+        #3b82f6, 
+        #6366f1, 
+        #d946ef, 
+        #ff6b6b  
+    );
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-text-animation 4s ease infinite;
+    }
+    @keyframes gradient-text-animation2 {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+
+.gradient-text-animation {
+    background: linear-gradient(
+    90deg,
+    #a7f3d0
+    #6ee7b7
+    #34d399
+    #10b981
+    #047857
+    #3d6a48
+    );
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-text-animation 3s linear infinite;
+}
+@keyframes gradient-text-animation {
+    0% {
+        background-position: 100%;
+        }
+        100% {
+        background-position: 200%;
+        }
+    }

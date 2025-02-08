@@ -7,7 +7,10 @@ import Analytics from './pages/Analytics';
 import background from './assets/background.png'; // Import background image
 import Garden from './pages/Garden';
 import Disease from './pages/Disease';
-import Community from './pages/Community';;
+import Login from './pages/Login';
+import Register from './pages/Register';
+import Community from './pages/Community';import RegisterPage from './pages/Register';
+;
 
 const App = () => {
   return (
@@ -17,15 +20,15 @@ const App = () => {
           backgroundImage: `url(${background})`, 
           backgroundAttachment: 'fixed',
         }}>
-        <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Register/>} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/home" element={<Home/>} />
           <Route path="/garden" element={<Garden/>} />
           <Route path="/analytics" element={<Analytics/>} />
           <Route path="/disease-detection" element={<Disease/>} />
           <Route path="/community" element={<Community/>} />
         </Routes>
-        <Footer />
       </div>
     </Router>
   );

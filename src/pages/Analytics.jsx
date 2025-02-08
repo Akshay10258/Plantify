@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Line, Doughnut } from "react-chartjs-2";
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -102,6 +104,8 @@ const Analytics = () => {
   };
 
   return (
+    <>
+    <Navbar/>
     <div className="bg-black/30 backdrop-blur-md text-white min-h-screen m-10 mb-0 p-6">
       <h1 className="text-4xl ml-2 mb-4 font-smooch">IoT Sensor Dashboard</h1>
 
@@ -202,6 +206,8 @@ const Analytics = () => {
         </div>
       </div>
     </div>
+        <Footer/>
+        </>
   );
 };
 
